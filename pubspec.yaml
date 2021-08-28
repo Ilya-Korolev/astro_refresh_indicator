@@ -1,7 +1,10 @@
 name: astro_refresh_indicator
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+version: 1.0.0
+description: A space refresh indicator for flutter.
+homepage: https://github.com/Ilya-Korolev/astro_refresh_indicator
+repository: https://github.com/Ilya-Korolev/astro_refresh_indicator
+documentation: https://github.com/Ilya-Korolev/astro_refresh_indicator
+issue_tracker: https://github.com/Ilya-Korolev/astro_refresh_indicator/issues
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
