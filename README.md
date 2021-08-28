@@ -1,6 +1,7 @@
 
 # Astro Refresh Indicator
 
+[![pub package][pub_badge]][pub_badge_link]
 [![License: MIT][license_badge]][license_link]
 
 A Flutter package that implements a `RefreshIndicator`. This package is meant to be used along with [pull_to_refresh][pull_to_refresh_link] package.
@@ -69,6 +70,8 @@ dependencies:
 ## License 
 Licensed under the [MIT License][license_link].
 
+[pub_badge]: https://img.shields.io/pub/v/astro_refresh_indicator.svg
+[pub_badge_link]: https://pub.dartlang.org/packages/astro_refresh_indicator
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_link]: https://opensource.org/licenses/MIT
 [pull_to_refresh_link]: https://pub.dev/packages/pull_to_refresh
