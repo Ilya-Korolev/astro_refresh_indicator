@@ -43,7 +43,7 @@ class _AstroRefreshIndicatorState extends RefreshIndicatorState<AstroRefreshIndi
   }
 
   Future<void> _initRive() async {
-    final file = await RiveFile.asset('packages/astro_refresher/assets/space_reload.riv');
+    final file = await RiveFile.asset('packages/astro_refresh_indicator/assets/space_reload.riv');
 
     _riveArtboard = file.mainArtboard;
     _riveController = StateMachineController.fromArtboard(_riveArtboard, 'Reload')!;

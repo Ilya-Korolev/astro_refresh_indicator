@@ -1,4 +1,4 @@
-import 'package:astro_refresher/astro_refresher.dart';
+import 'package:astro_refresh_indicator/astro_refresh_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 

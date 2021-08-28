@@ -1,4 +1,4 @@
-# astro_refresher
+# astro_refresh_indicator
 
 A new Flutter package project.
 

@@ -12,7 +12,7 @@ dependencies:
 
   pull_to_refresh: ^2.0.0
 
-  astro_refresher:
+  astro_refresh_indicator:
     path: ../
 
 dev_dependencies:
