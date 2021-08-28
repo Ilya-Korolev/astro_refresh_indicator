@@ -7,13 +7,13 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  astro_refresh_indicator:
+    path: ../
+    
   flutter:
     sdk: flutter
 
   pull_to_refresh: ^2.0.0
-
-  astro_refresh_indicator:
-    path: ../
 
 dev_dependencies:
   flutter_test:

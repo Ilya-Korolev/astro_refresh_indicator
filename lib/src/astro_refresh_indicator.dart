@@ -39,7 +39,8 @@ class AstroRefreshIndicator extends RefreshIndicator {
   ///
   /// `height` is a full animation height.
   ///
-  /// `completeDuration` is a duration that occurs when refresh has been completed.
+  /// `completeDuration` is a duration that occurs
+  /// when refresh has been completed.
   ///
   /// `refreshStyle` is a [RefreshIndicator] display style.
 
@@ -79,7 +80,8 @@ class AstroRefreshIndicator extends RefreshIndicator {
   }
 }
 
-class _AstroRefreshIndicatorState extends RefreshIndicatorState<AstroRefreshIndicator> {
+class _AstroRefreshIndicatorState
+    extends RefreshIndicatorState<AstroRefreshIndicator> {
   late final Artboard _riveArtboard;
   late final StateMachineController _riveController;
   late final SMIInput<double> _pullAmountInput;
@@ -96,10 +98,15 @@ class _AstroRefreshIndicatorState extends RefreshIndicatorState<AstroRefreshIndi
   }
 
   Future<void> _initRive() async {
-    final file = await RiveFile.asset('packages/astro_refresh_indicator/assets/space_reload.riv');
+    const assetPath =
+        'packages/astro_refresh_indicator/assets/space_reload.riv';
+    final file = await RiveFile.asset(assetPath);
 
     _riveArtboard = file.mainArtboard;
-    _riveController = StateMachineController.fromArtboard(_riveArtboard, 'Reload')!;
+    _riveController = StateMachineController.fromArtboard(
+      _riveArtboard,
+      'Reload',
+    )!;
 
     _riveArtboard.addController(_riveController);
 
