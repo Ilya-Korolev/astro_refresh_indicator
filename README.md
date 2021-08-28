@@ -56,9 +56,22 @@ dependencies:
   }
 ```
 
+## Credits
+
+#### Packages used:
+* [rive][rive_link]
+* [pull_to_refresh][pull_to_refresh_link]
+* [very_good_analysis][very_good_analysis_link]
+
+#### Animation:
+* [Interactive animations][animation_link]
+
 ## License 
 Licensed under the [MIT License][license_link].
 
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_link]: https://opensource.org/licenses/MIT
 [pull_to_refresh_link]: https://pub.dev/packages/pull_to_refresh
+[rive_link]: https://pub.dev/packages/rive
+[animation_link]: https://rive.app/community/516-982-interactive-animations/
+[very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
