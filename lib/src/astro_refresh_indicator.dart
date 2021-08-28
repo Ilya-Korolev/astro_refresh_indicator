@@ -35,14 +35,18 @@ class AstroRefreshIndicator extends RefreshIndicator {
   ///
   /// `backgroundColor` is a color to paint behind the animation.
   ///
+  /// `antiAliasing` enables/disables anti-aliasing.
+  ///
   /// `height` is a full animation height.
   ///
   /// `completeDuration` is a duration that occurs when refresh has been completed.
   ///
   /// `refreshStyle` is a [RefreshIndicator] display style.
+
   const AstroRefreshIndicator({
     this.fit = BoxFit.cover,
     this.backgroundColor = const Color(0xFF43378D),
+    this.antiAliasing = true,
     Duration completeDuration = const Duration(milliseconds: 500),
     double height = 150,
     RefreshStyle refreshStyle = RefreshStyle.UnFollow,
@@ -63,6 +67,11 @@ class AstroRefreshIndicator extends RefreshIndicator {
   ///
   /// Defaults to [Color(0xFF43378D)].
   final Color backgroundColor;
+
+  /// Enables/disables anti-aliasing
+  ///
+  /// Default to true
+  final bool antiAliasing;
 
   @override
   State<StatefulWidget> createState() {
@@ -157,6 +166,7 @@ class _AstroRefreshIndicatorState extends RefreshIndicatorState<AstroRefreshIndi
       child: Rive(
         artboard: _riveArtboard,
         fit: widget.fit,
+        antialiasing: widget.antiAliasing,
       ),
     );
   }
