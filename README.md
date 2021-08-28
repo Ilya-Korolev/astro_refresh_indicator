@@ -3,6 +3,7 @@
 
 [![pub package][pub_badge]][pub_badge_link]
 [![License: MIT][license_badge]][license_link]
+[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
 
 A Flutter package that implements a `RefreshIndicator`. This package is meant to be used along with [pull_to_refresh][pull_to_refresh_link] package.
 
@@ -77,4 +78,5 @@ Licensed under the [MIT License][license_link].
 [pull_to_refresh_link]: https://pub.dev/packages/pull_to_refresh
 [rive_link]: https://pub.dev/packages/rive
 [animation_link]: https://rive.app/community/516-982-interactive-animations/
+[very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
