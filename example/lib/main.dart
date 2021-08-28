@@ -45,6 +45,7 @@ class _BodyState extends State<Body> {
     return Scaffold(
       appBar: AppBar(),
       body: RefreshConfiguration(
+        // should be greater than AstroRefreshIndicator height
         headerTriggerDistance: 155,
         child: SmartRefresher(
           header: const AstroRefreshIndicator(),

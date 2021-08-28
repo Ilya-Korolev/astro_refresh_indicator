@@ -2,7 +2,44 @@ import 'package:flutter/cupertino.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:rive/rive.dart';
 
+/// [RefreshIndicator] with the space animation.
+///
+/// Example:
+/// ```dart
+/// @override
+/// Widget build(BuildContext context) {
+///   return Scaffold(
+///     appBar: AppBar(),
+///     body: RefreshConfiguration(
+///       // should be greater than AstroRefreshIndicator height
+///       headerTriggerDistance: 155,
+///       child: SmartRefresher(
+///         header: const AstroRefreshIndicator(),
+///         controller: _refreshController,
+///         onRefresh: _onRefresh,
+///         child: ListView.builder(
+///           padding: const EdgeInsets.symmetric(vertical: 5),
+///           itemBuilder: (c, i) => const Card(),
+///           itemExtent: 200,
+///           itemCount: 5,
+///         ),
+///       ),
+///     ),
+///   );
+/// }
+/// ```
 class AstroRefreshIndicator extends RefreshIndicator {
+  /// Creates a refresh indicator.
+  ///
+  /// `fit` is a [BoxFit] for the animation
+  ///
+  /// `backgroundColor` is a color to paint behind the animation.
+  ///
+  /// `height` is a full animation height.
+  ///
+  /// `completeDuration` is a duration that occurs when refresh has been completed.
+  ///
+  /// `refreshStyle` is a [RefreshIndicator] display style.
   const AstroRefreshIndicator({
     this.fit = BoxFit.cover,
     this.backgroundColor = const Color(0xFF43378D),
@@ -17,7 +54,14 @@ class AstroRefreshIndicator extends RefreshIndicator {
           refreshStyle: refreshStyle,
         );
 
+  /// BoxFit for the animation.
+  ///
+  /// Defaults to [BoxFit.cover].
   final BoxFit fit;
+
+  /// The color to paint behind the animation.
+  ///
+  /// Defaults to [Color(0xFF43378D)].
   final Color backgroundColor;
 
   @override
