@@ -62,19 +62,22 @@ class _AstroRefreshIndicatorState extends RefreshIndicatorState<AstroRefreshIndi
       return;
     }
 
-    if (offset < 0.0 || offset > widget.height) {
-      return;
-    }
-
+    _updateInnerHeight(offset);
     _updatePullAmount(offset);
+  }
 
-    if (mode == RefreshStatus.idle) {
+  void _updateInnerHeight(double offset) {
+    if (offset > 0.0 && offset < widget.height * 2.0) {
       setState(() => _innerHeight = offset);
     }
   }
 
   void _updatePullAmount(double offset) {
     if (_isLoadingInput.value) {
+      return;
+    }
+
+    if (offset < 0.0 || offset > widget.height) {
       return;
     }
 
