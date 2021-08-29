@@ -43,7 +43,6 @@ class AstroRefreshIndicator extends RefreshIndicator {
   /// when refresh has been completed.
   ///
   /// `refreshStyle` is a [RefreshIndicator] display style.
-
   const AstroRefreshIndicator({
     this.fit = BoxFit.cover,
     this.backgroundColor = const Color(0xFF43378D),
