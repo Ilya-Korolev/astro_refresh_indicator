@@ -12,7 +12,7 @@ A Flutter package that implements a `RefreshIndicator`. This package is meant to
 Add the following lines to the pubspec.yaml:
 ```yaml
 dependencies:
-  astro_refresh_indicator: ^1.0.1
+  astro_refresh_indicator: ^1.0.2
   pull_to_refresh: ^2.0.0
 ```
 
@@ -34,7 +34,7 @@ dependencies:
     return Scaffold(
       appBar: AppBar(),
       body: RefreshConfiguration(
-        // should be greater than AstroRefreshIndicator height
+        // should be greater than the AstroRefreshIndicator height
         headerTriggerDistance: 155,
         child: SmartRefresher(
           header: const AstroRefreshIndicator(),

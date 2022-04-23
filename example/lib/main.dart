@@ -14,8 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        accentColor: const Color(0xFF342b76),
-        primaryColor: const Color(0xFF342b76),
+        colorSchemeSeed: const Color(0xFF342b76),
         scaffoldBackgroundColor: const Color(0xFF342b76),
         cardColor: const Color(0xFF49448c),
       ),
@@ -28,7 +27,7 @@ class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);
 
   @override
-  _BodyState createState() => _BodyState();
+  State<Body> createState() => _BodyState();
 }
 
 class _BodyState extends State<Body> {
