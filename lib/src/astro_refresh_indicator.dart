@@ -11,7 +11,7 @@ import 'package:rive/rive.dart';
 ///   return Scaffold(
 ///     appBar: AppBar(),
 ///     body: RefreshConfiguration(
-///       // should be greater than AstroRefreshIndicator height
+///       // should be greater than the AstroRefreshIndicator height
 ///       headerTriggerDistance: 155,
 ///       child: SmartRefresher(
 ///         header: const AstroRefreshIndicator(),
