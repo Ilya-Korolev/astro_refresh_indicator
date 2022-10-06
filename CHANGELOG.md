@@ -1,3 +1,8 @@
+## 1.0.3
+* refactor: upgrade dependencies
+* refactor: resolve analysis warnings
+* docs: update README
+
 ## 1.0.2
 * refactor: upgrade dependencies
 * refactor: resolve analysis warnings

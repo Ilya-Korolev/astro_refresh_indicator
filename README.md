@@ -1,24 +1,29 @@
 
 # Astro Refresh Indicator
 
-[![pub package][pub_badge]][pub_badge_link]
-[![License: MIT][license_badge]][license_link]
-[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
+<p align="center">
+    <a href="https://pub.dev/packages/astro_refresh_indicator"><img src="https://img.shields.io/pub/v/astro_refresh_indicator.svg" alt="pub"></a>
+    <a href="https://pub.dev/packages/very_good_analysis"><img src="https://img.shields.io/badge/style-very_good_analysis-B22C89.svg" alt="style: very good analysis"></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license: MIT"></a>
+</p>
+
+---
 
 A Flutter package that implements a `RefreshIndicator`. This package is meant to be used along with [pull_to_refresh][pull_to_refresh_link] package.
 
-## Installation
+<img src="https://user-images.githubusercontent.com/39079821/194400223-7bd52189-b460-4f19-8290-48215fd069c4.gif" width="50%"/>
+
+## ⚙️ Getting started
 
 Add the following lines to the pubspec.yaml:
 ```yaml
 dependencies:
-  astro_refresh_indicator: ^1.0.2
+  astro_refresh_indicator: ^1.0.3
   pull_to_refresh: ^2.0.0
 ```
 
-## Example
+## 🚀 Usage
 
-<img src="https://user-images.githubusercontent.com/39079821/131216193-ab5aad5d-bf3a-4297-9dc5-3439e9f979a1.gif" width="33%" height="33%"/>
 
 ```dart
   final RefreshController _refreshController = RefreshController();
@@ -58,14 +63,14 @@ dependencies:
   }
 ```
 
-## Credits
+## ❤️ Credits
 
-#### Packages used:
+#### Used packages:
 * [rive][rive_link]
 * [pull_to_refresh][pull_to_refresh_link]
 * [very_good_analysis][very_good_analysis_link]
 
-#### Animation:
+#### Used animations:
 * [Interactive animations][animation_link]
 
 ## License 
